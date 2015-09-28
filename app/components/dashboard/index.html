@@ -1,0 +1,10 @@
+dashboard index.html
+<div>header for dashboard
+  <div ng-repeat="view in views | orderBy: 'index'">
+    <ui-view name="{{view.name}}"></ui-view>
+  </div>
+  <!--<div ui-view="{{organizations}}"></div>-->
+  <!--<div ui-view="{{recruitments}}"></div>-->
+  <!--<div ui-view="{{administrations}}"></div>-->
+</div>
+<div>footer for dashboard</div>
